@@ -14,4 +14,4 @@ baseurl=https://packages.wazuh.com/4.x/yum/
 priority=1
 EOF
 
-dnf5 install -y wazuh-agent
+#dnf5 install -y wazuh-agent

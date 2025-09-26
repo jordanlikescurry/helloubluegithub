@@ -24,4 +24,4 @@ set -ouex pipefail
 #systemctl enable podman.socket
 
 /ctx/install_wazuh.sh
-#/ctx/install_puppet.sh
+/ctx/install_puppet.sh
