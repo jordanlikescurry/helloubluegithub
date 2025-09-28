@@ -28,7 +28,7 @@ dnf5 remove -y firefox firefox-langpacks
 dnf5 install -y chromium
 dnf5 install -y emacs vim keepassxc glabels
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-flatpak install -y flathub be.alexandervanhee.gradia
+flatpak install --system -y flathub be.alexandervanhee.gradia
 /ctx/install_wazuh.sh
 /ctx/install_puppet.sh
 /ctx/install_niri.sh
