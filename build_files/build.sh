@@ -26,7 +26,12 @@ set -ouex pipefail
 
 dnf5 remove -y firefox firefox-langpacks
 dnf5 install -y chromium
-dnf5 install -y emacs vim keepassxc glabels
+echo "installing the good stuff"
+dnf5 install -y emacs vim keepassxc
+echo "installing label making software"
+dnf5 install -y glabels dymo-cups-drivers
+echo "additional printer stuff"
+dnf5 install -y cups-pdf gutenprint-cups
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 flatpak install --system -y flathub be.alexandervanhee.gradia
 /ctx/install_wazuh.sh
