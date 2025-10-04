@@ -24,7 +24,7 @@ set -ouex pipefail
 #systemctl enable podman.socket
 
 
-rpm-ostree override remove -y firefox firefox-langpacks
+rpm-ostree override remove firefox firefox-langpacks
 echo "installing the good stuff"
 rpm-ostree install -y emacs vim keepassxc
 echo "installing label making software"
