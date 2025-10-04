@@ -34,5 +34,6 @@ rpm-ostree install -y cups-pdf gutenprint-cups
 /ctx/install_wazuh.sh
 /ctx/install_puppet.sh
 /ctx/install_niri.sh
+/ctx/install_flatpaks.sh
 
 
