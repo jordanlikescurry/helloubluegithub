@@ -24,16 +24,13 @@ set -ouex pipefail
 #systemctl enable podman.socket
 
 
-dnf5 remove -y firefox firefox-langpacks
-dnf5 install -y chromium
+rpm-ostree override remove -y firefox firefox-langpacks
 echo "installing the good stuff"
-dnf5 install -y emacs vim keepassxc
+rpm-ostree install -y emacs vim keepassxc
 echo "installing label making software"
-dnf5 install -y glabels dymo-cups-drivers
+rpm-ostree install -y glabels dymo-cups-drivers
 echo "additional printer stuff"
-dnf5 install -y cups-pdf gutenprint-cups
-flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-flatpak install --system -y flathub be.alexandervanhee.gradia
+rpm-ostree install -y cups-pdf gutenprint-cups
 /ctx/install_wazuh.sh
 /ctx/install_puppet.sh
 /ctx/install_niri.sh

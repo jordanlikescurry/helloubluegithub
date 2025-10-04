@@ -2,4 +2,4 @@
 
 set -ouex pipefail
 
-dnf5 install -y niri
+rpm-ostree install -y niri

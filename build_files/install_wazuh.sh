@@ -14,4 +14,5 @@ baseurl=https://packages.wazuh.com/4.x/yum/
 priority=1
 EOF
 
+#mkdir -p /var/ossec/{logs,bin,package_files}
 #dnf5 install -y wazuh-agent
